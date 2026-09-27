@@ -1,0 +1,54 @@
+/* Customizações e ajustes finos para o tema verde do projeto */
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Transições suaves para interações com checkboxes e inputs */
+input[type="checkbox"],
+input[type="number"],
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Customização leve para os campos numéricos de preço */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Estilo para itens marcados (comprados) */
+.item-purchased {
+    opacity: 0.6;
+    background-color: #f0fdf4 !important;
+}
+
+.item-purchased .item-name {
+    text-decoration: line-through;
+    color: #047857;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ecfdf5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a7f3d0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #34d399;
+}
