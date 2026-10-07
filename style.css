@@ -1,0 +1,56 @@
+/* Estilos gerais */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input[type="checkbox"],
+input[type="number"],
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Ocultar flechas padrão de campos numéricos */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Itens marcados como comprados */
+.item-purchased {
+    opacity: 0.65;
+    background-color: #f0fdf4 !important;
+}
+
+.item-purchased .item-name {
+    text-decoration: line-through;
+    color: #047857;
+}
+
+/* Customização de Scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+    height: 4px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ecfdf5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a7f3d0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #34d399;
+}
